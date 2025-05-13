@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__left {
+    display: flex;
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__link {
+    font-weight: 400;
+    font-style: 15px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000;
+}
+
+.geo {
+    background-color: red;
+    border-radius: 20px;
+    display: flex;
+    gap: 12px;
+    color: white;
+    padding: 6px 54px;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 63px;
+    height: 400px;
+}
+
+.box__menu {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    border-radius: 25px;
+    margin-top: 44px;
+    gap: 30px;
+    
+}
+.box{
+    box-shadow: 0px 4px 6px 4px #0000001A;
+    padding: 12px;
+    border-radius: 15px;
+
+
+}
+
+.p1 {
+    display: flex;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 17.66px;
+    line-height: 28px;
+}
+
+.p2 {
+    display: flex;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18.28px;
+    line-height: 28px;
+    color: red;
+}
+
+.btn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-left: 183px;
+    margin-top: 42px;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 60px;
+    width: 976px;
+    height: 70px;
+}
+
+@media(max-width:992px) {
+    .logo{
+        display: none;
+    }
+    .img img{
+        width: 90%;
+    }
+}
+
+@media(max-width:768px) {
+    .geo{
+        padding: 5px 20px;
+    }
+    .end img {
+        width: 30%;
+    }
+}
+
+@media(max-width:600px) {
+    .menu{
+        display: flex;
+    }
+
+    .nav__right{
+        display: none;
+    }
+
+    .geo{
+        padding: 6px 40px;
+    }
+}
